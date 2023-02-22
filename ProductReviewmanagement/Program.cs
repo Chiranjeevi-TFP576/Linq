@@ -40,8 +40,10 @@
             //management.retriveCountRecord(listProducts);
 
             //UC5
-            management.RetriveProductId(listProducts);
-
+            //management.RetriveProductId(listProducts);
+            
+            //Uc6
+            management.SkipTop5Records(listProducts);
 
 
 
