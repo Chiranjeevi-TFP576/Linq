@@ -32,7 +32,10 @@
 
             //Uc2
             Management management = new Management();
-            management.TopRecord(listProducts);
+            //management.TopRecord(listProducts);
+            //UC3
+            management.selectedRecords(listProducts);
+
 
 
 
