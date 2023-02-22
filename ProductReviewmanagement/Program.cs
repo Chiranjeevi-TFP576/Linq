@@ -37,7 +37,10 @@
             // management.selectedRecords(listProducts);
 
             //UC4
-            management.retriveCountRecord(listProducts);
+            //management.retriveCountRecord(listProducts);
+
+            //UC5
+            management.RetriveProductId(listProducts);
 
 
 
