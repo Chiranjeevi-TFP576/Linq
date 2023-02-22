@@ -21,7 +21,7 @@ namespace ProductReviewmanagement
             }
 
         }
-        //UC-3
+        //UC3
         public void selectedRecords(List<ProductReview> listproductReviews)
         {
             var recordData = (from ProductReview in listproductReviews
@@ -33,6 +33,17 @@ namespace ProductReviewmanagement
             foreach (var list in recordData)
             {
                 Console.WriteLine("ProductId:-" + list.ProductId + " " + "UserID:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + " " + "IsLike:-" + list.IsLike);
+            }
+        }
+        //UC4
+        public void retriveCountRecord(List<ProductReview> listproductReviews)
+        {
+
+            var recordData = listproductReviews.GroupBy(x => x.ProductId).Select(x => new { productId = x.Key, count = x.Count() });
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("ProductId:-" + list.productId + "-----------------" + list.count);
             }
         }
     }

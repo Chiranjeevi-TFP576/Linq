@@ -34,7 +34,10 @@
             Management management = new Management();
             //management.TopRecord(listProducts);
             //UC3
-            management.selectedRecords(listProducts);
+            // management.selectedRecords(listProducts);
+
+            //UC4
+            management.retriveCountRecord(listProducts);
 
 
 
