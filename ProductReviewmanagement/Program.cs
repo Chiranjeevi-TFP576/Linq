@@ -25,15 +25,19 @@
                 new ProductReview() { ProductId = 15, UserId = 10, Rating = 4, Review = "nice", IsLike = true },
                 new ProductReview() { ProductId = 16, UserId = 10, Rating = 4, Review = "nice", IsLike = true },
             };
-            foreach (var list in listProducts)
-            {
-                Console.WriteLine("ProductId:" + list.ProductId + " " + "UserId:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review" + list.Review + " " + "IsLike" + list.IsLike);
-            }
+            //foreach (var list in listProducts)
+            //{
+            //    Console.WriteLine("ProductId:" + list.ProductId + " " + "UserId:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review" + list.Review + " " + "IsLike" + list.IsLike);
+            //}
+
+            //Uc2
+            Management management = new Management();
+            management.TopRecord(listProducts);
 
 
 
         }
-       
+
     }
 
 }
