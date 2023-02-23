@@ -41,9 +41,11 @@
 
             //UC5
             //management.RetriveProductId(listProducts);
-            
+
             //Uc6
-            management.SkipTop5Records(listProducts);
+            //management.SkipTop5Records(listProducts);
+            //Uc7
+            management.RetriveIsLikeTrue(listProducts);
 
 
 

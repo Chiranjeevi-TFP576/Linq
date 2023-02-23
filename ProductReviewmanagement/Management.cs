@@ -66,6 +66,15 @@ namespace ProductReviewmanagement
                 Console.WriteLine("ProductId:-" + list.ProductId + " " + "UserID:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + " " + "IsLike:-" + list.IsLike);
             }
         }
+        public void RetriveIsLikeTrue(List<ProductReview> listproductReviews)
+        {
+            var recordData = listproductReviews.Select(x => x.IsLike=true).ToList();
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("IsLike:-" + list);
+            }
+
+        }
 
     }
 }
